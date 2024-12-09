@@ -1,0 +1,76 @@
+#carouselExampleAutoplaying {
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.subTitleContainer {
+  background-color: white;
+  margin-top: 1vw;
+  width: 94vw;
+  border-radius: 10px;
+}
+
+.subTitle {
+  text-align: center;
+  color: black;
+  padding: 10px 0;
+}
+
+.barra_logos {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+}
+
+.barra_logos img {
+  max-height: 100%;
+  object-fit: contain;
+  max-width: 33%;
+  height: auto;
+}
+
+.container-fluid {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  width: 17rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  border-radius: 10px 10px 0 0;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-body a {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.card-body a:hover {
+  background-color: #0056b3;
+}
