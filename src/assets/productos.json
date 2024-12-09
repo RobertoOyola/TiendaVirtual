@@ -1,0 +1,42 @@
+[
+  {
+    "categoria": "Consolas",
+    "productos": [
+      {
+        "nombre": "Consola PlayStation 5",
+        "subcategoria": "PlayStation",
+        "rutaimg": "assets/Logos/nintendo.png",
+        "precio": 499.99
+      },
+      {
+        "nombre": "Nintendo Switch",
+        "subcategoria": "Nintendo",
+        "rutaimg": "assets/Logos/nintendo.png",
+        "precio": 299.99
+      },
+      {
+        "nombre": "Xbox Series X",
+        "subcategoria": "Xbox",
+        "rutaimg": "assets/Logos/nintendo.png",
+        "precio": 499.99
+      }
+    ]
+  },
+  {
+    "categoria": "Juegos",
+    "productos": [
+      {
+        "nombre": "Juego 1",
+        "subcategoria": "Acción",
+        "rutaimg": "assets/Logos/nintendo.png",
+        "precio": 49.99
+      },
+      {
+        "nombre": "Juego 2",
+        "subcategoria": "Aventura",
+        "rutaimg": "assets/Logos/nintendo.png",
+        "precio": 39.99
+      }
+    ]
+  }
+]
