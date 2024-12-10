@@ -1,22 +1,38 @@
-<!-- productos.component.html -->
-<div class="container">
-    <div *ngFor="let categoria of categorias" class="categoria-section">
-      <h2 class="categoria-title">{{ categoria.categoria }}</h2>
-  
-      <!-- Subcategorías -->
-      <div *ngFor="let subcategoria of categoria.subcategorias" class="subcategoria-section">
-        <h3 class="subcategoria-title">{{ subcategoria.nombre }}</h3>
-  
-        <div *ngFor="let producto of subcategoria.productos" class="producto-card">
-          <div class="card" style="width: 18rem;">
+<div class="container mt-4">
+  <div *ngFor="let categoria of categorias" class="mb-4">
+    <h2 class="text-primary">{{ categoria.categoria }}</h2>
+
+    <div *ngFor="let subcategoria of categoria.subcategorias" class="mb-3">
+      <h3 class="text-secondary">{{ subcategoria.nombre }}</h3>
+
+      <div class="row">
+        <div *ngFor="let producto of subcategoria.productos" class="col-md-4 mb-4">
+          <div class="card">
             <img [src]="producto.rutaimg" class="card-img-top" alt="{{ producto.nombre }}">
             <div class="card-body">
               <h5 class="card-title">{{ producto.nombre }}</h5>
               <p class="card-text">Precio: ${{ producto.precio }}</p>
+              <button (click)="addToCart(producto.id)" class="btn btn-primary">
+                Añadir al carrito
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
+</div>
+
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <strong class="me-auto">Carrito</strong>
+      <small>Justo ahora</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Producto añadido al carrito.
+    </div>
+  </div>
+</div>

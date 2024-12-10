@@ -6,6 +6,7 @@
           "nombre": "PlayStation",
           "productos": [
             {
+              "id": 1,
               "nombre": "Consola PlayStation 5",
               "rutaimg": "assets/Logos/nintendo.png",
               "infoAdicional": "",
@@ -17,6 +18,7 @@
           "nombre": "Nintendo",
           "productos": [
             {
+              "id": 2,
               "nombre": "Nintendo Switch",
               "rutaimg": "assets/Logos/nintendo.png",
               "infoAdicional": "",
@@ -28,6 +30,7 @@
           "nombre": "Xbox",
           "productos": [
             {
+              "id": 3,
               "nombre": "Xbox Series X",
               "rutaimg": "assets/Logos/nintendo.png",
               "infoAdicional": "",
@@ -44,6 +47,7 @@
           "nombre": "Acción",
           "productos": [
             {
+              "id": 4,
               "nombre": "Juego 1",
               "rutaimg": "assets/Logos/nintendo.png",
               "infoAdicional": "",
@@ -55,6 +59,7 @@
           "nombre": "Aventura",
           "productos": [
             {
+              "id": 5,
               "nombre": "Juego 2",
               "rutaimg": "assets/Logos/nintendo.png",
               "infoAdicional": "",
