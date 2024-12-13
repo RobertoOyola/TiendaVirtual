@@ -7,10 +7,24 @@
           "productos": [
             {
               "id": 1,
-              "nombre": "Consola PlayStation 5",
-              "rutaimg": "assets/Logos/nintendo.png",
-              "infoAdicional": "",
-              "precio": 499.99
+              "nombre": "PlayStation 5",
+              "rutaimg": "Productos/ps5.png",
+              "infoAdicional": "hola",
+              "precio": 523.00
+            },
+            {
+              "id": 2,
+              "nombre": "PlayStation 5 Slim",
+              "rutaimg": "Productos/ps5slim.png",
+              "infoAdicional": "hola",
+              "precio": 473.90
+            },
+            {
+              "id": 3,
+              "nombre": "PlayStation 4",
+              "rutaimg": "Productos/ps4.png",
+              "infoAdicional": "hola",
+              "precio": 214.31
             }
           ]
         },
@@ -18,11 +32,25 @@
           "nombre": "Nintendo",
           "productos": [
             {
-              "id": 2,
-              "nombre": "Nintendo Switch",
-              "rutaimg": "assets/Logos/nintendo.png",
+              "id": 4,
+              "nombre": "Nintendo Switch Oled",
+              "rutaimg": "Productos/oled.png",
               "infoAdicional": "",
-              "precio": 299.99
+              "precio": 349.00
+            },
+            {
+              "id": 5,
+              "nombre": "Nintendo Switch",
+              "rutaimg": "Productos/switch.png",
+              "infoAdicional": "",
+              "precio": 299.00
+            },
+            {
+              "id": 6,
+              "nombre": "3Ds XL",
+              "rutaimg": "Productos/3ds.png",
+              "infoAdicional": "",
+              "precio": 259.59
             }
           ]
         },
@@ -30,11 +58,146 @@
           "nombre": "Xbox",
           "productos": [
             {
-              "id": 3,
+              "id": 7,
               "nombre": "Xbox Series X",
-              "rutaimg": "assets/Logos/nintendo.png",
+              "rutaimg": "Productos/x.png",
               "infoAdicional": "",
-              "precio": 499.99
+              "precio": 560.00
+            },
+            {
+              "id": 8,
+              "nombre": "Xbox Series X All Digital",
+              "rutaimg": "Productos/xall.png",
+              "infoAdicional": "",
+              "precio": 499.90
+            },
+            {
+              "id": 9,
+              "nombre": "Xbox Series S",
+              "rutaimg": "Productos/seriess.png",
+              "infoAdicional": "",
+              "precio": 320.00
+            },
+            {
+              "id": 10,
+              "nombre": "Xbox One X",
+              "rutaimg": "Productos/xbox.png",
+              "infoAdicional": "",
+              "precio": 329.00
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoria": "Tcg",
+      "subcategorias": [
+        {
+          "nombre": "Pokemon",
+          "productos": [
+            {
+              "id": 11,
+              "nombre": "Surging Sparks Elite Trainer Box",
+              "rutaimg": "Productos/PokemonETBSS.png",
+              "infoAdicional": "",
+              "precio": 68.59
+            },
+            {
+              "id": 12,
+              "nombre": "Surging Sparks Elite Booster Box",
+              "rutaimg": "Productos/PokemonSSBoosterBox.png",
+              "infoAdicional": "",
+              "precio": 218.40
+            },
+            {
+              "id": 13,
+              "nombre": "Mini Tin Vibrant Paldea",
+              "rutaimg": "Productos/PokemonMiniTin.png",
+              "infoAdicional": "",
+              "precio": 10.00
+            },
+            {
+              "id": 14,
+              "nombre": "Paldean Fates Elite Trainer Box",
+              "rutaimg": "Productos/PokemonETB.png",
+              "infoAdicional": "",
+              "precio": 60.00
+            }
+          ]
+        },
+        {
+          "nombre": "Yugioh",
+          "productos": [
+            {
+              "id": 29,
+              "nombre": "Rarity Bonanza",
+              "rutaimg": "Productos/YugiBonanza.png",
+              "infoAdicional": "",
+              "precio": 15.23
+            },
+            {
+              "id": 15,
+              "nombre": "Mega Tin 2025",
+              "rutaimg": "Productos/2025Tin.png",
+              "infoAdicional": "",
+              "precio": 19.90
+            },
+            {
+              "id": 16,
+              "nombre": "Rarity Collection 2",
+              "rutaimg": "Productos/YugiRao2.png",
+              "infoAdicional": "",
+              "precio": 83.55
+            },
+            {
+              "id": 17,
+              "nombre": "Mega Tin 2024",
+              "rutaimg": "Productos/2024Tin.png",
+              "infoAdicional": "",
+              "precio": 15.23
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoria": "Accesorios",
+      "subcategorias": [
+        {
+          "nombre": "Consola",
+          "productos": [
+            {
+              "id": 18,
+              "nombre": "Xbox Elite series 2",
+              "rutaimg": "Productos/EliteSeries2.png",
+              "infoAdicional": "",
+              "precio": 98.00
+            },
+            {
+              "id": 19,
+              "nombre": "Switch Rueda de carreras",
+              "rutaimg": "Productos/Rueda.png",
+              "infoAdicional": "",
+              "precio": 14.99
+            }
+          ]
+        },
+        {
+          "nombre": "Tcgs",
+          "productos": [
+            {
+              "id": 20,
+              "nombre": "Carpeta Tcg",
+              "rutaimg": "Productos/carpeta-480.png",
+              "infoAdicional": "",
+              "precio": 17.99
+            },
+            {
+              "id": 21,
+              "nombre": "Forros Dragon Shield",
+              "rutaimg": "Productos/sleeve.png",
+              "infoAdicional": "",
+              "precio": 12.00
             }
           ]
         }
@@ -44,26 +207,61 @@
       "categoria": "Juegos",
       "subcategorias": [
         {
-          "nombre": "Acción",
+          "nombre": "Play station",
           "productos": [
             {
-              "id": 4,
-              "nombre": "Juego 1",
-              "rutaimg": "assets/Logos/nintendo.png",
+              "id": 22,
+              "nombre": "GTA 5 PS5",
+              "rutaimg": "Productos/gta5.png",
               "infoAdicional": "",
-              "precio": 49.99
+              "precio": 27.85
+            },
+            {
+              "id": 23,
+              "nombre": "SpiderMan 2 PS5",
+              "rutaimg": "Productos/sm2.png",
+              "infoAdicional": "",
+              "precio": 39.97
+            },
+            {
+              "id": 24,
+              "nombre": "Elder Ring PS5",
+              "rutaimg": "Productos/elder.png",
+              "infoAdicional": "",
+              "precio": 41.53
+            },
+            {
+              "id": 25,
+              "nombre": "Minecraft PS4",
+              "rutaimg": "Productos/mine.png",
+              "infoAdicional": "",
+              "precio": 29.97
             }
           ]
         },
         {
-          "nombre": "Aventura",
+          "nombre": "Nintendo",
           "productos": [
             {
-              "id": 5,
-              "nombre": "Juego 2",
-              "rutaimg": "assets/Logos/nintendo.png",
+              "id": 26,
+              "nombre": "Super Smash Bros Switch",
+              "rutaimg": "Productos/ssb.png",
               "infoAdicional": "",
-              "precio": 39.99
+              "precio": 49.99
+            },
+            {
+              "id": 27,
+              "nombre": "Leyends of Zelda TOK Switch",
+              "rutaimg": "Productos/totk.png",
+              "infoAdicional": "",
+              "precio": 59.48
+            },
+            {
+              "id": 28,
+              "nombre": "Animal Crossing Switch",
+              "rutaimg": "Productos/AnimalCrossing.png",
+              "infoAdicional": "",
+              "precio": 56.95
             }
           ]
         }

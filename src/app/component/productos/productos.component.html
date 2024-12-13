@@ -1,14 +1,14 @@
 <div class="container mt-4">
-  <div *ngFor="let categoria of categorias" class="mb-4">
+  <div id="{{ categoria.categoria }}" *ngFor="let categoria of categorias" class="mb-4">
     <h2 class="text-primary">{{ categoria.categoria }}</h2>
 
-    <div *ngFor="let subcategoria of categoria.subcategorias" class="mb-3">
+    <div id="{{ categoria.categoria }}" *ngFor="let subcategoria of categoria.subcategorias" class="mb-3">
       <h3 class="text-secondary">{{ subcategoria.nombre }}</h3>
 
       <div class="row">
         <div *ngFor="let producto of subcategoria.productos" class="col-md-4 mb-4">
           <div class="card">
-            <img [src]="producto.rutaimg" class="card-img-top" alt="{{ producto.nombre }}">
+            <img src="{{producto.rutaimg}}" class="card-img-top" alt="{{ producto.nombre }}">
             <div class="card-body">
               <h5 class="card-title">{{ producto.nombre }}</h5>
               <p class="card-text">Precio: ${{ producto.precio }}</p>

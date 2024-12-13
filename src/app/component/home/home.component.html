@@ -36,38 +36,39 @@
 <div style="margin-top: 15px; color: white;"><h3>Categorías</h3></div>
 
 <div class="container-fluid">
-  <div class="card">
-      <a href="">
-          <img src="Categorias/CategoriaConsola.png" class="card-img-top" alt="Consolas">
-          <div class="card-body">
-              <a href="#" class="btn btn-primary">Consolas</a>
-          </div>
-      </a>
-  </div>
+    <div class="card">
+        <a [routerLink]="['/producto']" fragment="Consolas">
+            <img src="Categorias/CategoriaConsola.png" class="card-img-top" alt="Consolas">
+            <div class="card-body">
+            <a [routerLink]="['/producto']" fragment="Consolas" class="btn btn-primary">Consolas</a>
+            </div>
+        </a>
+    </div>
+      
 
   <div class="card">
-      <a href="">
+    <a [routerLink]="['/producto']" fragment="Tcg">
           <img src="Categorias/CategoriaTcg.png" class="card-img-top" alt="TCG">
           <div class="card-body">
-              <a href="#" class="btn btn-primary">TCG</a>
+              <a href="/producto#Tcg" class="btn btn-primary">TCG</a>
           </div>
       </a>
   </div>
 
   <div class="card">
-      <a href="">
+    <a [routerLink]="['/producto']" fragment="Accesorios">
           <img src="Categorias/CategoriaAccesorios.png" class="card-img-top" alt="Accesorios">
           <div class="card-body">
-              <a href="#" class="btn btn-primary">Accesorios</a>
+            <a [routerLink]="['/producto']" fragment="Accesorios" class="btn btn-primary">Accesorios</a>
           </div>
       </a>
   </div>
 
   <div class="card">
-      <a href="">
+    <a [routerLink]="['/producto']" fragment="Juegos">
           <img src="Categorias/CategoriaJuegos.png" class="card-img-top" alt="Juegos">
           <div class="card-body">
-              <a href="#" class="btn btn-primary">Juegos</a>
+              <a href="producto/#Juegos" class="btn btn-primary">Juegos</a>
           </div>
       </a>
   </div>

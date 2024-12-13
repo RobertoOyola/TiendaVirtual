@@ -1,4 +1,70 @@
-/* productos.component.css */
+/* Títulos de categoría */
+h2.text-primary {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #007bff; /* Cambia este color si deseas algo más llamativo */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+}
+
+/* Títulos de subcategorías */
+h3.text-secondary {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #6c757d;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+/* Letras dentro de las tarjetas */
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Botón dentro de las tarjetas */
+.btn-primary {
+  background-color: #28a745;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 15px;
+}
+
+.btn-primary:hover {
+  background-color: #218838;
+}
+
+/* Sombra y animación para las tarjetas */
+.card {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Fondo del contenedor */
+.container {
+  background: linear-gradient(to bottom, #d8d8d8, #e9ecef);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+
 .container {
     margin-top: 50px;
   }
@@ -35,7 +101,7 @@
   .card-img-top {
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    object-fit: contain;
   }
   
   .card-body {

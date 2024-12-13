@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductosService } from '../../services/productos.service';
+import { ActivatedRoute } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
 
 declare var bootstrap: any;
 
@@ -13,13 +15,28 @@ declare var bootstrap: any;
 export class ProductosComponent implements OnInit {
   categorias: any[] = [];
 
-  constructor(private productoService: ProductosService) {}
+  constructor(
+    private productoService: ProductosService,
+    private route: ActivatedRoute,
+    private viewportScroller: ViewportScroller
+  ) {}
 
   ngOnInit(): void {
+    
     this.productoService.getProductos().subscribe(data => {
       this.categorias = data;
+  
+      
+      this.route.fragment.subscribe((fragment) => {
+        if (fragment) {
+          setTimeout(() => {
+            this.viewportScroller.scrollToAnchor(fragment);
+          }, 200);
+        }
+      });
     });
   }
+  
 
   addToCart(productId: number): void {
     const cart = JSON.parse(sessionStorage.getItem('cart') || '[]');

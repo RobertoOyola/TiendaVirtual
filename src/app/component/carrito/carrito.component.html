@@ -1,38 +1,39 @@
-<div class="container mt-4">
-    <h2 class="text-primary">Carrito de Compras</h2>
-  
-    <div *ngIf="cartItems.length > 0; else emptyCart">
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>Producto</th>
-            <th>Precio Unitario</th>
-            <th>Cantidad</th>
-            <th>Subtotal</th>
-            <th>Acciones</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let item of cartItems">
-            <td>{{ item.nombre }}</td>
-            <td>${{ item.precio }}</td>
-            <td>{{ item.quantity }}</td>
-            <td>${{ item.total }}</td>
-            <td>
-              <button (click)="removeItem(item.id)" class="btn btn-danger btn-sm">Eliminar</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-  
-      <h3 class="text-end">Total: ${{ total }}</h3>
-      <button (click)="clearCart()" class="btn btn-warning">Vaciar carrito</button>
+<div class="container mt-4 carrito-container">
+  <h2 class="text-primary carrito-titulo">Carrito de Compras</h2>
+
+  <div *ngIf="cartItems.length > 0; else emptyCart">
+    <table class="table table-hover table-bordered">
+      <thead class="table-header">
+        <tr>
+          <th>Producto</th>
+          <th>Precio Unitario</th>
+          <th>Cantidad</th>
+          <th>Subtotal</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of cartItems">
+          <td>{{ item.nombre }}</td>
+          <td>${{ item.precio }}</td>
+          <td>{{ item.quantity }}</td>
+          <td>${{ item.total }}</td>
+          <td>
+            <button (click)="removeItem(item.id)" class="btn btn-danger btn-sm">Eliminar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="total-container">
+      <h3 class="text-end carrito-total">Total: ${{ total }}</h3>
+      <button (click)="clearCart()" class="btn btn-success vaciar-btn">Pagar</button>
     </div>
-  
-    <ng-template #emptyCart>
-      <div class="alert alert-info">
-        Tu carrito está vacío.
-      </div>
-    </ng-template>
   </div>
-  
+
+  <ng-template #emptyCart>
+    <div class="alert alert-info text-center empty-cart-alert">
+      Tu carrito está vacío.
+    </div>
+  </ng-template>
+</div>
