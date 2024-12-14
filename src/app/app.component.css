@@ -9,14 +9,12 @@
   align-items: center;
   justify-content: center;
   height: 100px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .outlet {
   margin-top: 100px;
   padding: 20px;
-  background-color: gray;
-  min-height: calc(100vh - 100px - 50px);
+  background-color: gray; 
   overflow-y: auto;
   overflow-x: hidden;
   width: 100.8%;

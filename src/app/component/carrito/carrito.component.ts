@@ -18,9 +18,7 @@ export class CarritoComponent implements OnInit {
     this.loadCart();
   }
 
-  /**
-   * Cargar los productos del carrito desde Session Storage y el JSON.
-   */
+  
   loadCart(): void {
     const cart = JSON.parse(sessionStorage.getItem('cart') || '[]') as { id: number; quantity: number }[];
 
@@ -39,32 +37,25 @@ export class CarritoComponent implements OnInit {
           };
         }
         return null;
-      }).filter((item): item is any => item !== null); // Filtrar productos nulos (si algún ID no existe)
+      }).filter((item): item is any => item !== null);
 
       this.calculateTotal();
     });
   }
 
-  /**
-   * Calcular el total del carrito.
-   */
+  
   calculateTotal(): void {
     this.total = this.cartItems.reduce((sum: number, item: any) => sum + item.total, 0);
   }
 
-  /**
-   * Vaciar el carrito y limpiar los datos del Session Storage.
-   */
+  
   clearCart(): void {
     sessionStorage.removeItem('cart');
     this.cartItems = [];
     this.total = 0;
   }
 
-  /**
-   * Eliminar un producto específico del carrito.
-   * @param productId - ID del producto a eliminar.
-   */
+
   removeItem(productId: number): void {
     const cart = JSON.parse(sessionStorage.getItem('cart') || '[]') as { id: number; quantity: number }[];
     const updatedCart = cart.filter((item: { id: number }) => item.id !== productId);
